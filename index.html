@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Database Access Portal</title>
+  <title>Major Crimes Database</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Major Crimes Database</h1>
-  <p>Access restricted. Authorized personnel only.</p>
+
+  <div class="login-container">
+    <h1>Major Crimes Database</h1>
+    <p>Authorized Task Force Personnel Only</p>
+
+    <input type="password" id="password" placeholder="Enter Access Code">
+    <br>
+    <button onclick="login()">Access System</button>
+
+    <p id="error"></p>
+  </div>
+
+  <script src="js/app.js"></script>
 </body>
 </html>
+
