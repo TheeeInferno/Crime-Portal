@@ -1,4 +1,4 @@
 function logout() {
-  // Simple redirect to login page
+  // Redirect back to login page
   window.location.href = "../index.html";
 }
