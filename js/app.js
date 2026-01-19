@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
-    if (username === "admin" && password === "CHANGE_THIS_PASSWORD") {
+    if (username === "Detective" && password === "MC2026") {
       window.location.href = "pages/dashboard.html";
     } else {
       document.getElementById("error").innerText = "INVALID CREDENTIALS";
