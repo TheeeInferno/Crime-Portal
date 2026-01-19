@@ -2,22 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CAD Dashboard</title>
+  <title>Major Crimes CAD Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <h1>Major Crimes CAD</h1>
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    MAJOR CRIMES CAD
+    <button class="logout-button" onclick="logout()">LOGOUT</button>
+  </div>
 
-  <ul>
-    <li>Case Management</li>
-    <li>Persons / Gang Members</li>
-    <li>Field Interviews</li>
-    <li>Vehicles</li>
-    <li>Reports</li>
-    <li>Intel Bulletins</li>
-  </ul>
+  <!-- DASHBOARD CONTENT -->
+  <div class="dashboard-container">
 
+    <div class="dashboard-panel">
+      <h2>Active Cases</h2>
+      <p>No cases loaded</p>
+    </div>
+
+    <div class="dashboard-panel">
+      <h2>Active BOLOs</h2>
+      <p>No alerts</p>
+    </div>
+
+    <div class="dashboard-panel">
+      <h2>Recent Activity</h2>
+      <p>Nothing to display</p>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="footer">
+    SYSTEM STATUS: <span class="online">ONLINE</span><br>
+    Authorized law enforcement use only. All activity is monitored and logged.
+  </div>
+
+  <script src="../js/dashboard.js"></script>
 </body>
 </html>
