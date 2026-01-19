@@ -20,16 +20,17 @@
   <!-- LEFT MENU -->
   <div class="side-menu">
     <ul>
-      <li><a href="#">Dashboard</a></li>
-      <li><a href="#">Reports</a></li>
-      <li><a href="#">Map</a></li>
-      <li><a href="#">Cases</a></li>
-      <li><a href="#">BOLOs</a></li>
+     <li><a href="#" onclick="showDashboard()">Dashboard</a></li>
+     <li><a href="#" onclick="showReports()">Reports</a></li>
+     <li><a href="#" onclick="showMap()">Map</a></li>
+     <li><a href="#" onclick="showCases()">Cases</a></li>
+     <li><a href="#" onclick="showBOLOs()">BOLOs</a></li>
     </ul>
   </div>
 
   <!-- DASHBOARD CONTENT -->
-  <div class="dashboard-container">
+<div class="dashboard-main">
+  <div id="content-area" class="dashboard-container">
 
     <div class="dashboard-panel">
       <h2>Active Cases</h2>
@@ -47,6 +48,8 @@
     </div>
 
   </div>
+</div>
+
 
   <!-- BOTTOM BAR -->
   <div class="footer">

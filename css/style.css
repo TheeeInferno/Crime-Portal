@@ -168,6 +168,18 @@ button:hover {
   gap: 20px;
 }
 
+.dashboard-main {
+  margin-left: 200px; /* leave space for side menu */
+  padding-top: 60px;  /* space for top bar */
+  padding-bottom: 60px; /* space for footer */
+}
+
+#content-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
 .dashboard-panel {
   background-color: #0a0c1e;
   border: 1px solid #1e293b;
