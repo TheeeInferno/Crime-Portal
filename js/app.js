@@ -1,25 +1,30 @@
-function login() {
-  const username = document.getElementById("username").value;
-  const password = document.getElementById("password").value;
+document.addEventListener("DOMContentLoaded", function () {
 
-  if (username === "Detective" && password === "MC2026") {
-    window.location.href = "pages/dashboard.html";
-  } else {
-    document.getElementById("error").innerText = "INVALID CREDENTIALS";
-  }
-}
+  function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
-document.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    login();
+    if (username === "admin" && password === "CHANGE_THIS_PASSWORD") {
+      window.location.href = "pages/dashboard.html";
+    } else {
+      document.getElementById("error").innerText = "INVALID CREDENTIALS";
+    }
   }
+
+  window.login = login;
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      login();
+    }
+  });
+
+  function updateTime() {
+    const now = new Date();
+    document.getElementById("time").innerText =
+      now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
 });
-
-function updateTime() {
-  const now = new Date();
-  const timeString = now.toLocaleTimeString();
-  document.getElementById("time").innerText = timeString;
-}
-
-setInterval(updateTime, 1000);
-updateTime();
