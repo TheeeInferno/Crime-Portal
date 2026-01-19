@@ -23,6 +23,11 @@ body {
   z-index: 1000;
 }
 
+.top-bar .top-right {
+  display: flex;
+  align-items: center;
+}
+
 .system-title {
   font-size: 13px;
   letter-spacing: 1px;
@@ -31,19 +36,20 @@ body {
 
 /* LOGOUT BUTTON */
 .logout-button {
-  background-color: #dc2626;
-  color: #ffffff;
+  background-color: #0a0c1e; /* same as side menu */
+  color: #9ca3af;
   border: none;
-  padding: 4px 10px;
+  padding: 6px 12px;
   font-family: 'Orbitron', Arial, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   cursor: pointer;
   letter-spacing: 1px;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .logout-button:hover {
-  background-color: #b91c1c;
+  background-color: #1e293b;
+  color: #38bdf8;
 }
 
 /* FOOTER */
