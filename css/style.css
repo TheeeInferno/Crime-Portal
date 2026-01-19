@@ -76,3 +76,34 @@ button:hover {
   font-size: 12px;
   color: #f87171;
 }
+
+.system-id {
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #9ca3af;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #9ca3af;
+}
+
+.online {
+  color: #22c55e;
+}
+
+.legal {
+  margin-top: 20px;
+  font-size: 10px;
+  line-height: 1.4;
+  color: #6b7280;
+}
+
+#error {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #f87171;
+}
