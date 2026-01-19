@@ -92,3 +92,31 @@ button:hover {
 .online {
   color: #22c55e;
 }
+
+.unit {
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  color: #9ca3af;
+}
+
+.divider {
+  height: 1px;
+  background-color: #1e293b;
+  margin: 15px 0;
+}
+
+.modules {
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #9ca3af;
+  text-align: left;
+  line-height: 1.8;
+}
+
+.hint {
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #6b7280;
+}
